@@ -40,7 +40,6 @@ jobs:
           audience: sts.amazonaws.com
           aws-region: ${{ env.AWS_REGION }}
           role-to-assume: arn:aws:iam::575327645493:role/ec2-ecr-access-role   
-          aws-region: us-east-1 
 
       - name: Check if Security Group Exists
         id: check-security-group
