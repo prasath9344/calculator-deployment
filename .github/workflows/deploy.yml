@@ -275,7 +275,7 @@ jobs:
             sudo bash -c "cat > /etc/nginx/sites-available/${CONTAINER_NAME}" <<'EOL'
             server {
                 listen 80;
-                server_name praveen.work.cyber@gmail.com;
+                server_name praveenm.me;
             
                 location / {
                     proxy_pass http://localhost:5000;
