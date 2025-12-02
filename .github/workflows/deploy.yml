@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 env:
-  AWS_REGION: ap-south-1
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: calculator-repo         
   CONTAINER_NAME: calculator-cont
   INSTANCE_TYPE: t2.micro
@@ -39,7 +39,8 @@ jobs:
         with:
           audience: sts.amazonaws.com
           aws-region: ${{ env.AWS_REGION }}
-          role-to-assume: arn:aws:iam::575327645493:role/ec2-ecr-access-role    
+          role-to-assume: arn:aws:iam::575327645493:role/ec2-ecr-access-role   
+          aws-region: us-east-1 
 
       - name: Check if Security Group Exists
         id: check-security-group
