@@ -22,7 +22,7 @@ env:
   SECURITY_GROUP_NAME: launch-wizard-2
   SECURITY_GROUP_DESCRIPTION: "launch-wizard-2 created via GitHub Actions"
   VPC_ID: vpc-0d1bf1da3a43aa0bd
-  EIP_ALLOCATION_ID: eipalloc-0f19a6c8197168156
+  EIP_ALLOCATION_ID: eipalloc-0bed0e0c450b3bba7
   ECR_ROLE_NAME: ec2-ecr-access-role 
 
 jobs:
